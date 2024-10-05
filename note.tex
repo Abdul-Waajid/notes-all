@@ -1,0 +1,726 @@
+\documentclass[a4paper]{article}
+\title{Software development one - Design}
+\author{Riyazdeen Abdul Waajid}
+\date{5th of October 2024}
+
+\usepackage{parskip}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in]{geometry}
+\usepackage{enumerate}
+
+
+\setlength{\parskip}{0.3 em}
+\setlength{\parskip}{1em}  % Add 1em space between paragraphs
+\setlength{\parindent}{0pt} % Disable paragraph indentation
+
+\begin{document}
+\maketitle
+\tableofcontents    
+\newpage    
+\section{SDLC/Dev - Software development life cycle}
+\subsubsection{\textbf{what is the Software Development life cycle?}}
+It is a systematic process or set of phases that guide the development of software applications from conception to deployment and maintenance. 
+
+In simple words it is to make an idea to manifest into reality, this idea could also
+be the solution to a problem. This idea/solution will take its form over multiple
+phases. This solution, which is the end product must also be disributable, and used by end users.
+
+These phases are the standard set of steps to be followed when developing a software.
+\parindent 0px
+
+\textbf{The phases in the SDLC are:}
+\begin{enumerate}
+    \item Analysis phase  
+    \item Design phase  
+    \item Implementation
+    \item Testing
+    \item Deployment
+    \item Maintenance
+        
+
+\end{enumerate}
+
+The software development process is referred to as a cycle rather than a sequence because it is often iterative and repetitive.
+In a sequence, each step would occur once in a linear order, but in a cycle, the process loops back on itself, allowing for 
+continuous improvement, refinement of the software.
+\subsection{Analysis phase - requirement gathering and analysis}
+\textbf{Identify and understand the needs, and the requirements of the software.} Within this phase, the problem is to be identified, the requirements are to be identified, and then an analysis of the problem
+and the requirements are to be made.
+Before starting any new task or development of a new software it is of utmost priority for the developer or anyone who undertakes development to understand
+the exact requirements that are demanded by the task. 
+
+To gather the requirements the developer must use elicitation methods, such as: 
+\begin{itemize}
+    \item observations
+    \item interviews
+    \item surveys
+    \item research into literature
+\end{itemize}    
+
+Elicitation methods are techniques used to gather, extract, and understand requirements from stakeholders 
+(such as clients, users, and subject matter experts) during the early stages of a project. These methods 
+help ensure that the software or system being developed aligns with the needs and expectations of those who will use or benefit from it.
+Elicitation methods are crucial in business analysis, system design, and project management to accurately capture functional and 
+non-functional requirements.
+
+Next in this phase, \textbf{the project scope must be defined, followed by documenting the functional and non-functional requirements.}
+
+Defining the project scope establishes clear boundaries for the team, outlining the specific criteria that need to be fulfilled.
+Everything within the scope represents what the system and developers are responsible for. Conversely, any requirements outside 
+this scope are not part of the project and are not the developers' responsibility. This ensures that expectations are managed and the 
+team focuses only on the agreed-upon deliverables.
+%
+%\textbf{\textit{Extra notes from gpt starts here! }}
+%
+%The scope of a project refers to the specific boundaries and objectives of the project, detailing what needs to be accomplished, including:
+%
+%\begin{enumerate}
+%    \item Project Goals: The high-level objectives or outcomes the project is designed to achieve.
+%    \item Deliverables: The tangible outputs, such as products, features, or services, that the project will produce.
+%    \item Tasks and Activities: The work required to achieve the project's goals and deliverables.
+%    \item Exclusions: What is not included in the project (this helps prevent misunderstandings).
+%    \item Constraints: Limitations in terms of time, budget, resources, or technologies.
+%    \item Assumptions: Hypotheses or conditions assumed to be true for the project to proceed (e.g., resource availability).
+%    \item Stakeholders: Who will be involved in or affected by the project, such as clients, users, or team members.
+%\end {enumerate}
+%
+%\textbf{Why Must the Scope Be Defined?}
+%    
+%Defining the project scope is crucial for the following reasons:
+%\begin{enumerate}
+%    \item Prevents Scope Creep 
+%    \begin{itemize}
+%        \item Scope creep refers to uncontrolled changes or additions to a project’s requirements without 
+%            corresponding changes in time, resources, or budget. When scope is clearly defined, it helps maintain focus on agreed-upon
+%            deliverables and prevents the project from expanding beyond its original boundaries. 
+%    \end{itemize}
+%    \item Establishes Clear Goals and Deliverables 
+%    \begin{itemize}
+%        \item A defined scope clarifies the objectives and expectations, ensuring all stakeholders understand what the project aims to 
+%            achieve. It acts as a guiding document to keep everyone aligned on the outcomes.
+%    \end{itemize}
+%    \item Resource Allocation 
+%    \begin{itemize}
+%        \item A well-defined scope helps determine the amount of time, budget, and resources needed for 
+%            the project. Without a clear scope, it's difficult to estimate these factors accurately, leading to overruns and inefficiencies.
+%    \end{itemize}
+%    \item Provides a Baseline for Planning 
+%    \begin{itemize}
+%        \item The project scope sets a foundation for more detailed project planning, including the schedule, costs, and 
+%            quality requirements. It helps in setting realistic timelines and milestones.
+%    \end{itemize}
+%    \item Manages Stakeholder Expectations 
+%    \begin{itemize}
+%        \item By clearly defining what the project will deliver (and what it won’t), you can manage stakeholder expectations from the start. 
+%            This helps avoid misunderstandings about what is in or out of scope, reducing the risk of dissatisfaction.
+%    \end{itemize}
+%    \item Helps in Risk Management 
+%    \begin{itemize}
+%        \item A clearly defined scope allows the team to identify potential risks that might arise from attempting to 
+%            achieve certain project deliverables. Understanding the project boundaries aids in risk assessment and mitigation planning.
+%    \end{itemize}
+%    \item Facilitates Change Control 
+%    \begin{itemize}
+%        \item Defining the scope provides a framework for handling change requests. Any changes to the project can be compared against the
+%            original scope, and the project team can assess how those changes would impact resources, time, and costs before deciding whether to approve them.
+%    \end{itemize}
+%    \item Improves Project Control and Tracking
+%    \begin{itemize}
+%        \item Once the scope is defined, it serves as a baseline to measure progress and determine whether the project is on track. Deviations from 
+%            the scope can be identified early and corrected before they lead to significant issues.
+%    \end{itemize}
+%    \item Enhances Team Focus and Productivity 
+%    \begin{itemize}
+%        \item A clear scope gives the project team a clear understanding of their responsibilities 
+%            and tasks. With specific deliverables in mind, the team can stay focused and work efficiently toward the project goals.
+%    \end{itemize}
+%    \item Legal Protection
+%    \begin{itemize}
+%        \item In contractual or formal settings, the project scope serves as a reference to protect the project 
+%            team and stakeholders legally. If there are disputes about what was promised versus delivered, the defined scope provides a solid basis for resolution.
+%    \end{itemize}
+%\end{enumerate}
+%
+%\textbf{\textit{Extra notes from gpt end here! }}
+
+\vspace{0.5 cm}
+\subsubsection{\textbf{Functional Requirements and Non-functional requirements}}
+
+\vspace{0.5 cm}
+\begin{Large}\textbf{Functional requirements }\end{Large}
+
+Functional requirements describe the specific behaviors or functions that a system must perform. 
+The focus is on the actions and features the product will deliver. These requirements define what the system should do 
+to fulfill its intended purpose.
+
+A common approach for gathering and prioritizing functional requirements is based on the IEEE standards, often represented using 
+the MoSCoW method. This format categorizes requirements based on their importance and necessity.
+
+In the MoSCoW format, the requirements are grouped into the following categories:
+
+\begin{enumerate}
+    \item Must: Essential features the system is required to have. 
+    \item Should: Important features that are not critical but highly desirable. 
+    \item Could: Features that are nice to have if time and resources permit. 
+    \item Won't (or Would): Features that are not considered at this stage but might be included in the future. 
+\end{enumerate}
+
+This approach helps prioritize the most critical requirements, ensuring that the system focuses on delivering what is absolutely necessary, 
+while also considering enhancements when possible.
+
+\textbf{\textit{Examples:}} 
+    \begin{enumerate}[(a)]
+        \item The user should be able to log into the dashboard using biometric credentials.  
+    \end{enumerate}
+\vspace{0.5 cm}
+
+\textbf{\textit{Extra notes from gpt starts here! }}
+
+{\raggedright \begin{large} Some functional requirements for a library system:\end{large}\par }
+    \begin{enumerate}[(1)]
+        \item User Registration and Authentication 
+            \begin{itemize}
+                \item  The system must allow users to create an account by providing personal details (e.g., name, email, ID). 
+                \item  The system should provide a password recovery option.
+                \item  User Registration and Authentication Users must be able to log in using their credentials (username/password or biometric login).
+            \end{itemize}
+        \item Book Search and Retrieval The system should display the availability status (available, checked out, reserved). 
+            \begin{itemize}
+                \item  Users must be able to search for books by title, author, genre, ISBN, or keywords. 
+                \item  Users should be able to filter and sort search results by criteria like publication date or popularity.
+            \end{itemize}
+        \item Book Borrowing The system must track the due dates for borrowed items. 
+            \begin{itemize}
+                \item  Registered users must be able to borrow books by placing a hold on available items. 
+                \item  Users should be able to extend loan periods if the book is not reserved by another user.
+            \end{itemize}
+        \item Book Reservation 
+            \begin{itemize}
+                \item  Users must be able to reserve books that are currently checked out. 
+                \item  The system should notify users when a reserved book becomes available for pickup. 
+            \end{itemize}
+        \item Notifications and Alerts  
+            \begin{itemize}
+                \item  The system must notify users about overdue books via email or SMS.
+                \item  The system should send reminders for upcoming due dates. 
+                \item  Users should receive alerts when reserved books are available for pickup.
+            \end{itemize}
+        \item Catalog Management (For Admins/Librarians)  
+            \begin{itemize}
+                \item  Librarians must be able to add, update, or remove books from the system catalog.
+                \item  The system should support bulk uploading of book data through CSV files or other formats.
+                \item  The system must allow the classification of books by genres, authors, and categories.
+            \end{itemize}
+        \item Fine Calculation and Payment 
+            \begin{itemize}
+                \item  The system must calculate overdue fines based on the number of late days.
+                \item  Users must be able to view their fine history and pay fines online.
+            \end{itemize}
+        \item User Account Management   
+            \begin{itemize}
+                \item  Users must be able to view their borrowing history.
+                \item  The system must allow users to update their personal information.
+                \item  Users should be able to view current borrowed books, due dates, and reservation statuses.
+            \end{itemize}
+        \item Library Hours and Information  
+            \begin{itemize}
+                \item  The system should display library hours, upcoming events, and holidays.
+                \item  Users should be able to view the locations and contact information for different library branches.
+            \end{itemize}
+        \item Reports and Analytics (For Admins)
+            \begin{itemize}
+                \item  The system must generate reports on book circulation, user activity, and overdue items.
+                \item  Librarians should be able to view analytics on popular books, genres, and user borrowing patterns.
+            \end{itemize}
+    \end{enumerate}
+\textbf{\textit{Extra notes from gpt end here! }}
+
+\vspace{0.5 cm}
+\begin{Large}\textbf{Non-functional requirement}\end{Large}
+
+Non-functional requirement specifies the quality attributes or the constrains the system must satisfy.
+
+Non-functional requirements (NFRs) specify the criteria that can be used to judge the operation of a system, rather than specific behaviors. 
+These requirements define how a system performs its functions rather than what functions it performs. They encompass various quality attributes and 
+constraints that affect the user experience, performance, and overall system characteristics.
+
+\textbf {Meaning of Non-Functional Requirements}
+
+Non-functional requirements describe the quality attributes of a system, such as:
+\begin{itemize}
+    \item Performance: How quickly the system responds to user actions.
+    \item Usability: How easy and intuitive the system is for users.
+    \item Reliability: The system's ability to function under specific conditions without failure.
+    \item Scalability: The capacity of the system to handle increased loads or expand in capability.
+    \item Security: Measures to protect the system from unauthorized access or breaches.
+    \item Maintainability: The ease with which the system can be modified or updated.
+    \item Avalibility: The accessibility of the system to the users over a period of time.
+\end{itemize}
+
+\vspace{0.5 cm}
+\textbf{\textit{Examples of Non-Functional Requirements:}}
+
+\begin{enumerate}
+        \item Performance Requirements
+\begin{itemize}
+        \item The system should respond to user queries within 2 seconds under normal load conditions.
+        \item The system must support 100 concurrent users without performance degradation.
+\end{itemize}
+        \item Usability Requirements
+
+\begin{itemize}
+        \item The user interface should be intuitive and easy to navigate, requiring no more than three clicks to access any feature.
+        \item The system must provide accessibility features for users with disabilities (e.g., screen reader compatibility).
+\end{itemize}
+        \item Reliability Requirements
+
+\begin{itemize}
+        \item The system should have an uptime of 99.9% over a one-year period.
+        \item The system must recover from failures within 5 minutes.
+\end{itemize}
+        \item Scalability Requirements
+
+\begin{itemize}
+        \item The system should be able to scale horizontally by adding new servers to handle increased user load.
+        \item The application should support a 50% increase in user traffic during peak seasons.
+\end{itemize}
+        \item Security Requirements
+\begin{itemize}
+
+        \item All user data must be encrypted both at rest and in transit.
+        \item The system must implement multi-factor authentication for user logins.
+\end{itemize}
+        \item Maintainability Requirements
+
+\begin{itemize}
+        \item The system should allow for easy integration of new features with minimal disruption to existing functionality.
+        \item The codebase must be documented in compliance with established coding standards.
+\end{itemize}
+        \item Compatibility Requirements
+
+\begin{itemize}
+        \item The application should be compatible with the latest versions of major web browsers (e.g., Chrome, Firefox, Safari).
+        \item The system must integrate seamlessly with existing internal systems and databases.
+\end{itemize}
+        \item Legal and Regulatory Compliance
+\begin{itemize}
+        \item All user data handling must adhere to industry standards for privacy and security.
+\end{itemize}
+\end{enumerate}
+\textbf{Importance of Non-Functional Requirements}
+\begin{enumerate}[(a).]
+        \item User Experience:
+
+            They significantly impact how users perceive the quality and reliability of the system.
+
+        \item System Quality:
+
+            NFRs help ensure that the system meets the desired performance, usability, and security standards.
+
+        \item Risk Management:
+
+            Addressing NFRs early in development can reduce risks associated with performance bottlenecks, security vulnerabilities, and
+            user dissatisfaction.
+
+        \item Long-term Viability:
+
+            They help ensure that the system remains maintainable and adaptable over time as technology and user needs evolve.
+
+\end {enumerate}
+
+In summary, non-functional requirements are critical for the overall success of a system, influencing how well it meets user expectations 
+and performs under various conditions.
+
+Normally, developers use use case diagrams to represent the functional requirements of a system
+
+Use case diagrams are simple visual tools that show how users interact with a system. They help explain what the system can do from the user's point of view. The main parts 
+of a use case diagram are actors, which are the users or things that use the system, and use cases, which are the actions they can
+take, like searching for a book, borrowing a book, or signing up as a new user. The system boundary is a box that shows what is included in the system. For example, in a library management system, the actors could be a "User" and a "Librarian," while the use cases might include searching for books and returning borrowed ones. Use case diagrams are useful because they help everyone understand how users will interact with the system, making it easier to plan and develop the needed features.
+
+
+
+\subsubsection{Feasibility study}
+
+
+
+A feasibility study is an analysis conducted to determine the viability of a proposed project or solution. It evaluates whether 
+the project is practical and achievable within a given timeframe, budget, and resource constraints. The goal of a feasibility study is to
+assess various aspects of a project to help stakeholders make informed decisions about whether to proceed, modify, or abandon the idea.
+
+\textbf{Key Components of a Feasibility Study}
+
+\begin{enumerate}
+    \item Technical Feasibility:
+
+            Assesses whether the technology and resources needed to implement the project are available and whether the project can be developed using 
+            existing technology. If the databases that are required exist, that the languages that exist can meet the requirements, and all the other
+            technical factors must be considered in accordance to the requirements.
+
+    \item Economic Feasibility:
+
+            Evaluates the cost-effectiveness of the project. This includes an analysis of the expected costs, potential financial benefits, 
+            and overall return on investment.
+
+    \begin{enumerate}
+        \item Expenditure
+            
+        \begin{enumerate}
+            \item Direct expenditure 
+
+                Example: Such as the salaries of the developers of a company, the price of the hardware
+
+            \item Indirect expenditure
+
+                Example: When an newly released software's servers crash due to the unexpectedly heavy traffic.  
+
+        \end{enumerate}
+
+        \item Revenue
+
+        \begin{enumerate}
+            \item Direct revenue
+
+                Example: such as the product sales, service fees, subscription fees, etc.
+
+            \item Indirect revenue
+
+                Example: Saving time
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+    \item Operational Feasibility:
+
+            Examines how well the proposed project aligns with the organization’s existing operations and whether it can be integrated into 
+            current processes.
+            
+            Example: An organization wants to shift from recording data on paper to using a computer system.
+            However, the software developed by the team is too complex and difficult to navigate, with many unnecessary features.
+            This complexity can overwhelm the employees, who are not accustomed to using complicated software.
+            In this case, the software is not operationally feasible. For individuals who are not very familiar with computers, 
+            the developer must design the software to be easy to use with a small learning curve, ensuring it fits smoothly into their workflow.
+
+
+    \item Legal Feasibility:
+           
+            Determines if the project complies with legal and regulatory requirements, including permits, licenses, and environmental regulations.
+            
+    \item Organisational Feasibility: 
+        
+        Refers to the assessment of whether an organization has the necessary resources, structure, skills, and culture to successfully implement 
+        a proposed project. It focuses on evaluating internal capabilities to determine if the organization can support 
+        the development, deployment, and operation of the project. This type of feasibility is critical in ensuring that the project aligns with
+        the organization's goals and that the necessary human, technical, and management resources are available
+
+
+\end{enumerate}
+
+Importance of a Feasibility Study
+\begin{enumerate}
+    \item Informed Decision-Making: Helps stakeholders understand the potential challenges and benefits, allowing for more informed decisions.
+    \item Risk Mitigation: Identifies potential risks and obstacles early in the planning process, enabling the team to address them proactively.
+    \item Resource Allocation: Provides insight into the resources required for the project, helping organizations allocate their time, money, and personnel effectively.
+    \item Stakeholder Confidence: Demonstrates due diligence to stakeholders and investors, increasing their confidence in the project.
+\end{enumerate}
+
+\textbf{Conclusion}
+
+In summary, a feasibility study is an essential step in project planning that assesses various factors to determine whether 
+a project is worth pursuing. By thoroughly analyzing the technical, economic, operational, legal, and scheduling aspects, 
+organizations can make better-informed decisions that contribute to successful project outcomes.
+
+\textit{At the end of the first phase, after completing all the above steps, it will result in an document called an SRS document also know as the 
+Software Requirement Specification. This is the outcome of your first phase, after the requirement gathering and the feasibility analysis.}
+
+\subsection{System design}
+the second phase is the System design.
+ the srs (Software requirement specification) is given to the architects and senior managers who will the be creating the high level design that 
+outlines the system architecture and component 
+
+this is where the data structures and, interfaces and algoriths, and overall system behaviour.
+  
+the tools that are used : UML diagrams .
+
+an artifact called the Software Desing Document. 
+
+the third chapter is the implementation chapter, where you write the actual code. 
+
+this is where you do the unit testing.   
+
+at the end of this you will have an code or program which can be executable.
+
+
+the forth chpter is the "Testing"
+
+to check wether the system outputs and the functional requirements are working properly
+there are three basic types of testing .
+
+white box testing and black box testings, grey box testing 
+
+black box. where anything inside is not visible. where you do all the testing without having any access to any internal code, or any other documents.
+what you do is that you insert an input and then proceed to verify if the output is correct.
+
+
+
+white box. a similtude, like a glass. you have acess to all the code and have an understanding of it. all documents are accessible.
+
+grey box, where the code is partially accessible, 
+
+inside a life cycle you have anothe life cycle, software testing life cycled.
+
+each test case contain multiple parameters.
+  
+there are 6 phases in this software life cycle.
+
+1. Requirement 
+
+
+Testing Phases. 
+
+1. Aceptance testin- which is divided into two parts.
+    1. you have an involment with the development team, where an member from a different team from the development team.
+
+2. system testing- a black box or a white box 
+3. intergration testing is trying to integrate the components together and to verify that all these components are working well. done by the develepor
+4. Unit testing - done by the develepors them selves
+5.
+
+6. Deployment stage.
+ you need to follow multioplw senarios
+
+Direct deployment - an old system and an new system. where you stop with your old system and continue with your new system.
+there is a high risk in this way because you will be removing the old system and if your new system is to fail then you are left with, 
+no working system.
+
+Parellel deployment - is to maintain both systems for a transition time, where you run both the systems in parellel.
+there is less risk. during the transition period there is a high cost. because you are running both systems at the same time.
+
+pilot deployment - where you take a sample and you let them use the new system and let the others use the old system. for this pilot group this is 
+going be a direct deployment, yet for the company this will be a parellel deployment. 
+the cost is high and the risk is low.
+
+Phases deployment - where, in each phase you introduce a new feature from the new system and remove the old feature from the old system, gradually
+introducing the new system, eventually removing the old system.
+
+this is a good way of doing the deployment.
+the risk is low 
+and a good way to handle a complex software.
+
+7...
+maintainance and support    
+
+this is like an long journey.
+cost plan is hard to predict in the long run.
+
+it is risky to decide to maintain a project for a long time.
+
+Development methodologies.
+a way we use sdlc in real life is kown as development methodologies.
+  
+
+Homw woik.............read and get an idea of these models 
+
+Waterfall model    --1 
+
+spiral model --2 used for high risk projects, for large projects.
+
+V model --3 verification and validation. 
+
+agile model --4 very easyy to adapt to changes.
+
+The RAD model.
+
+Home work.............
+
+
+
+do a research on the models pros and cons. 
+SDLC/Dev
+
+startsection{Software development life cycle}
+
+Is a systematic process or set of phases that guide the development of software applications from conception to deployment and maintenance.
+
+To make the idea into something that is tangible, you need to follow multiple phases which are in between these two stages.
+
+Standard set of steps 
+
+Analysis phase  
+Design phase  
+Testing phase 
+
+These phases are redone again and again every time you have to make an improvement to the software and update it. Thats why its called a cycle.
+
+1. Analysis phase 
+
+Identify the problem  
+Gather the requirement   
+Do an analysis
+
+You need to first identify and understand the needs. Such as the requirements.
+
+This identification is called the elicitation phase
+
+Elicitation phase is to implement methods such as surveys ans intervcies and observation , researdch and litriratki  
+And questuionsareds
+
+The Scope of the projects   
+	 Inscope and outscope to identify the inscope, to handle them and to identify t;he out scppw ewhvih will not be handled buy us
+
+To identify the functional and the nonfunctional requirements 
+
+The functional requierrnet   
+Describes the specific behaviours or the functions that a system must perform  
+The functionally of the program that you will bge making 
+
+Moscow standard- a way how we standardise  ieee .
+
+Must  
+Should   
+Would  
+Could 
+
+Prioritizw and criticalness
+
+The user should be able to log into the dashboard using biometric credentials. 
+
+The user who is the target audience and the action functioon which is the dash board   
+And the format which is to be able to by using the  biometric
+
+Functional requirements for the library requirements ..
+
+To be able to add and organise books  
+To be able to track books that are lent   
+To be able to generate a user identity per person  
+To be able to return the books   
+To be able to
+
+Feasibility study
+
+1. Technical Feasibility  
+2. Operational Feasibility   
+3. Economical Feasibility  
+    1. Expendeture
+        1.direct expendeture 
+        2. Indirect revenue.
+    2. Revenue
+        1. direct expendeture
+        2. Indirect revenue.
+
+
+4. Organisational Feasibility  
+     
+
+5. Legal Feasibility
+        
+    you need to consider the legal feasibility.
+
+
+Software requirment specification. this is the requirement of the first phase.
+
+the second phase is the System design.
+ the srs (Software requirement specification) is given to the architects and senior managers who will the be creating the high level design that 
+outlines the system architecture and component 
+
+this is where the data structures and, interfaces and algoriths, and overall system behaviour.
+  
+the tools that are used : UML diagrams .
+
+an artifact called the Software Desing Document. 
+
+the third chapter is the implementation chapter, where you write the actual code. 
+
+this is where you do the unit testing.   
+
+at the end of this you will have an code or program which can be executable.
+
+
+the forth chpter is the "Testing"
+
+to check wether the system outputs and the functional requirements are working properly
+there are three basic types of testing .
+
+white box testing and black box testings, grey box testing 
+
+black box. where anything inside is not visible. where you do all the testing without having any access to any internal code, or any other documents.
+what you do is that you insert an input and then proceed to verify if the output is correct.
+
+
+
+white box. a similtude, like a glass. you have acess to all the code and have an understanding of it. all documents are accessible.
+
+grey box, where the code is partially accessible, 
+
+inside a life cycle you have anothe life cycle, software testing life cycled.
+
+each test case contain multiple parameters.
+  
+there are 6 phases in this software life cycle.
+
+1. Requirement 
+
+
+Testing Phases. 
+
+1. Aceptance testin- which is divided into two parts.
+    1. you have an involment with the development team, where an member from a different team from the development team.
+
+2. system testing- a black box or a white box 
+3. intergration testing is trying to integrate the components together and to verify that all these components are working well. done by the develepor
+4. Unit testing - done by the develepors them selves
+5.
+
+6. Deployment stage.
+ you need to follow multioplw senarios
+
+Direct deployment - an old system and an new system. where you stop with your old system and continue with your new system.
+there is a high risk in this way because you will be removing the old system and if your new system is to fail then you are left with, 
+no working system.
+
+Parellel deployment - is to maintain both systems for a transition time, where you run both the systems in parellel.
+there is less risk. during the transition period there is a high cost. because you are running both systems at the same time.
+
+pilot deployment - where you take a sample and you let them use the new system and let the others use the old system. for this pilot group this is 
+going be a direct deployment, yet for the company this will be a parellel deployment. 
+the cost is high and the risk is low.
+
+Phases deployment - where, in each phase you introduce a new feature from the new system and remove the old feature from the old system, gradually
+introducing the new system, eventually removing the old system.
+
+this is a good way of doing the deployment.
+the risk is low 
+and a good way to handle a complex software.
+
+7...
+maintainance and support    
+
+this is like an long journey.
+cost plan is hard to predict in the long run.
+
+it is risky to decide to maintain a project for a long time.
+
+Development methodologies.
+a way we use sdlc in real life is kown as development methodologies.
+  
+
+
+Homw woik.............read and get an idea of these models 
+
+Waterfall model    --1 
+
+spiral model --2 used for high risk projects, for large projects.
+
+V model --3 verification and validation. 
+
+agile model --4 very easyy to adapt to changes.
+
+The RAD model.
+
+Home work.............
+
+
+
+do a research on the models pros and cons. 
+\end{document}

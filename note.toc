@@ -1,6 +1,0 @@
-\contentsline {section}{\numberline {1}SDLC/Dev - Software development life cycle}{2}{}%
-\contentsline {subsubsection}{\numberline {1.0.1}\textbf {what is the Software Development life cycle?}}{2}{}%
-\contentsline {subsection}{\numberline {1.1}Analysis phase - requirement gathering and analysis}{2}{}%
-\contentsline {subsubsection}{\numberline {1.1.1}\textbf {Functional Requirements and Non-functional requirements}}{3}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}Feasibility study}{6}{}%
-\contentsline {subsection}{\numberline {1.2}System design}{7}{}%

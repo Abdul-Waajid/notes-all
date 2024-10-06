@@ -342,8 +342,6 @@ take, like searching for a book, borrowing a book, or signing up as a new user. 
 
 \subsubsection{Feasibility study}
 
-
-
 A feasibility study is an analysis conducted to determine the viability of a proposed project or solution. It evaluates whether 
 the project is practical and achievable within a given timeframe, budget, and resource constraints. The goal of a feasibility study is to
 assess various aspects of a project to help stakeholders make informed decisions about whether to proceed, modify, or abandon the idea.
@@ -480,24 +478,47 @@ This manual will teach the end user on how to use the system or the program.
 
 Conduct various testing, phases such as integration testing, system testing, and user acceptance testing. Identify and fix defects or issues found 
 during testing.
+
+\subsubsection{The three types of testing }
 \begin{enumerate}
-    \item White box testing
-    \item Gray box testing 
-    \item Black box testing
+    \item White box testing:
+
+
+        The testers are allowed to see the internal code structures. In this type of testing the main advantage is that even if the code does function
+        and produce the correct output, the testers can see the internal structures and check for errors such as code redundency, or wrong output for
+        some of the internal functoins of the code. Usually the developers from the team that originally developed the code for the software might be 
+        present.
+
+    \item Black box testing:
+
+        In black box testing the internal code or the structure is unkown to the tester who is testing the code. Where the tester compares the output 
+        of the system to the expected output after inserting an input. If the expected output and the actual output are not exaclty the same then that 
+        means that there is an error or an bug in the software or the system. The tester or the quality assurance team are not provided with any documents that 
+        explain the system or any type of access to the internal code.
+
+Example: automated testing can be incorperated to perform black box testing.
+
+    \item Gray box testing : 
+
+        This is where the tester has partial access to the code blocks and internal code. 
+
 \end{enumerate}
-to check wether the system outputs and the functional requirements are working properly
-there are three basic types of testing .
 
-white box testing and black box testings, grey box testing 
+The most important of these two types of testing is the white box and black box testing.
 
-black box. where anything inside is not visible. where you do all the testing without having any access to any internal code, or any other documents.
-what you do is that you insert an input and then proceed to verify if the output is correct.
+Within the software testing phase there is another life cycle.
 
+\subsubsection{Software Testing Life Cycle (STLCL)}
 
+\begin{enumerate}
+    \item Requirement analysis
+    \item Test planing 
+    \item Test case design and development 
+    \item Test enviroment setup
+    \item Test execution
+    \item Test cycle closure
+\end{enumerate}
 
-white box. a similtude, like a glass. you have acess to all the code and have an understanding of it. all documents are accessible.
-
-grey box, where the code is partially accessible, 
 
 inside a life cycle you have anothe life cycle, software testing life cycled.
 

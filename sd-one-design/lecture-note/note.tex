@@ -9,6 +9,7 @@
 \usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in]{geometry}
 \usepackage{enumerate}
 
+\usepackage{float}
 
 \setlength{\parskip}{0.3 em}
 \setlength{\parskip}{1em}  % Add 1em space between paragraphs
@@ -23,8 +24,8 @@
 It is a systematic process or set of phases that guide the development of software applications from conception to deployment and maintenance. 
 
 In simple words it is to make an idea to manifest into reality, this idea could also
-be the solution to a problem. This idea/solution will take its form over multiple
-phases. This solution, which is the end product must also be disributable, and used by end users.
+be the solution to a problem. This idea /solution will take its form over multiple
+phases. This solution, which is the end product must also be distributable, and used by end users.
 
 These phases are the standard set of steps to be followed when developing a software.
 \parindent 0px
@@ -45,9 +46,11 @@ The software development process is referred to as a cycle rather than a sequenc
 In a sequence, each step would occur once in a linear order, but in a cycle, the process loops back on itself, allowing for 
 continuous improvement, refinement of the software.
 \subsection{Analysis phase - requirement gathering and analysis}
-\textbf{Identify and understand the needs, and the requirements of the software.} Within this phase, the problem is to be identified, the requirements are to be identified, and then an analysis of the problem
+\textbf{Identify and understand the needs, and the requirements of the software.} Within this phase, the problem is to be
+identified, the requirements are to be identified, and then an analysis of the problem
 and the requirements are to be made.
-Before starting any new task or development of a new software it is of utmost priority for the developer or anyone who undertakes development to understand
+Before starting any new task or development of a new software it is of utmost priority for the developer or anyone who 
+undertakes development to understand
 the exact requirements that are demanded by the task. 
 
 To gather the requirements the developer must use elicitation methods, such as: 
@@ -70,79 +73,81 @@ Defining the project scope establishes clear boundaries for the team, outlining 
 Everything within the scope represents what the system and developers are responsible for. Conversely, any requirements outside 
 this scope are not part of the project and are not the developers' responsibility. This ensures that expectations are managed and the 
 team focuses only on the agreed-upon deliverables.
-%
-%\textbf{\textit{Extra notes from gpt starts here! }}
-%
-%The scope of a project refers to the specific boundaries and objectives of the project, detailing what needs to be accomplished, including:
-%
-%\begin{enumerate}
-%    \item Project Goals: The high-level objectives or outcomes the project is designed to achieve.
-%    \item Deliverables: The tangible outputs, such as products, features, or services, that the project will produce.
-%    \item Tasks and Activities: The work required to achieve the project's goals and deliverables.
-%    \item Exclusions: What is not included in the project (this helps prevent misunderstandings).
-%    \item Constraints: Limitations in terms of time, budget, resources, or technologies.
-%    \item Assumptions: Hypotheses or conditions assumed to be true for the project to proceed (e.g., resource availability).
-%    \item Stakeholders: Who will be involved in or affected by the project, such as clients, users, or team members.
-%\end {enumerate}
-%
-%\textbf{Why Must the Scope Be Defined?}
-%    
-%Defining the project scope is crucial for the following reasons:
-%\begin{enumerate}
-%    \item Prevents Scope Creep 
-%    \begin{itemize}
-%        \item Scope creep refers to uncontrolled changes or additions to a project’s requirements without 
-%            corresponding changes in time, resources, or budget. When scope is clearly defined, it helps maintain focus on agreed-upon
-%            deliverables and prevents the project from expanding beyond its original boundaries. 
-%    \end{itemize}
-%    \item Establishes Clear Goals and Deliverables 
-%    \begin{itemize}
-%        \item A defined scope clarifies the objectives and expectations, ensuring all stakeholders understand what the project aims to 
-%            achieve. It acts as a guiding document to keep everyone aligned on the outcomes.
-%    \end{itemize}
-%    \item Resource Allocation 
-%    \begin{itemize}
-%        \item A well-defined scope helps determine the amount of time, budget, and resources needed for 
-%            the project. Without a clear scope, it's difficult to estimate these factors accurately, leading to overruns and inefficiencies.
-%    \end{itemize}
-%    \item Provides a Baseline for Planning 
-%    \begin{itemize}
-%        \item The project scope sets a foundation for more detailed project planning, including the schedule, costs, and 
-%            quality requirements. It helps in setting realistic timelines and milestones.
-%    \end{itemize}
-%    \item Manages Stakeholder Expectations 
-%    \begin{itemize}
-%        \item By clearly defining what the project will deliver (and what it won’t), you can manage stakeholder expectations from the start. 
-%            This helps avoid misunderstandings about what is in or out of scope, reducing the risk of dissatisfaction.
-%    \end{itemize}
-%    \item Helps in Risk Management 
-%    \begin{itemize}
-%        \item A clearly defined scope allows the team to identify potential risks that might arise from attempting to 
-%            achieve certain project deliverables. Understanding the project boundaries aids in risk assessment and mitigation planning.
-%    \end{itemize}
-%    \item Facilitates Change Control 
-%    \begin{itemize}
-%        \item Defining the scope provides a framework for handling change requests. Any changes to the project can be compared against the
-%            original scope, and the project team can assess how those changes would impact resources, time, and costs before deciding whether to approve them.
-%    \end{itemize}
-%    \item Improves Project Control and Tracking
-%    \begin{itemize}
-%        \item Once the scope is defined, it serves as a baseline to measure progress and determine whether the project is on track. Deviations from 
-%            the scope can be identified early and corrected before they lead to significant issues.
-%    \end{itemize}
-%    \item Enhances Team Focus and Productivity 
-%    \begin{itemize}
-%        \item A clear scope gives the project team a clear understanding of their responsibilities 
-%            and tasks. With specific deliverables in mind, the team can stay focused and work efficiently toward the project goals.
-%    \end{itemize}
-%    \item Legal Protection
-%    \begin{itemize}
-%        \item In contractual or formal settings, the project scope serves as a reference to protect the project 
-%            team and stakeholders legally. If there are disputes about what was promised versus delivered, the defined scope provides a solid basis for resolution.
-%    \end{itemize}
-%\end{enumerate}
-%
-%\textbf{\textit{Extra notes from gpt end here! }}
+
+\textbf{\textit{Extra notes from gpt starts here! }}
+
+The scope of a project refers to the specific boundaries and objectives of the project, detailing what needs to be accomplished, including:
+
+\begin{enumerate}
+    \item Project Goals: The high-level objectives or outcomes the project is designed to achieve.
+    \item Deliverables: The tangible outputs, such as products, features, or services, that the project will produce.
+    \item Tasks and Activities: The work required to achieve the project's goals and deliverables.
+    \item Exclusions: What is not included in the project (this helps prevent misunderstandings).
+    \item Constraints: Limitations in terms of time, budget, resources, or technologies.
+    \item Assumptions: Hypotheses or conditions assumed to be true for the project to proceed (e.g., resource availability).
+    \item Stakeholders: Who will be involved in or affected by the project, such as clients, users, or team members.
+\end {enumerate}
+
+\textbf{Why Must the Scope Be Defined?}
+    
+Defining the project scope is crucial for the following reasons:
+\begin{enumerate}
+    \item Prevents Scope Creep 
+    \begin{itemize}
+        \item Scope creep refers to uncontrolled changes or additions to a project’s requirements without 
+            corresponding changes in time, resources, or budget. When scope is clearly defined, it helps maintain focus on agreed-upon
+            deliverables and prevents the project from expanding beyond its original boundaries. 
+    \end{itemize}
+    \item Establishes Clear Goals and Deliverables 
+    \begin{itemize}
+        \item A defined scope clarifies the objectives and expectations, ensuring all stakeholders understand what the project aims to 
+            achieve. It acts as a guiding document to keep everyone aligned on the outcomes.
+    \end{itemize}
+    \item Resource Allocation 
+    \begin{itemize}
+        \item A well-defined scope helps determine the amount of time, budget, and resources needed for 
+            the project. Without a clear scope, it's difficult to estimate these factors accurately, leading to overruns and inefficiencies.
+    \end{itemize}
+    \item Provides a Baseline for Planning 
+    \begin{itemize}
+        \item The project scope sets a foundation for more detailed project planning, including the schedule, costs, and 
+            quality requirements. It helps in setting realistic timelines and milestones.
+    \end{itemize}
+    \item Manages Stakeholder Expectations 
+    \begin{itemize}
+        \item By clearly defining what the project will deliver (and what it won’t), you can manage stakeholder expectations from the start. 
+            This helps avoid misunderstandings about what is in or out of scope, reducing the risk of dissatisfaction.
+    \end{itemize}
+    \item Helps in Risk Management 
+    \begin{itemize}
+        \item A clearly defined scope allows the team to identify potential risks that might arise from attempting to 
+            achieve certain project deliverables. Understanding the project boundaries aids in risk assessment and mitigation planning.
+    \end{itemize}
+    \item Facilitates Change Control 
+    \begin{itemize}
+        \item Defining the scope provides a framework for handling change requests. Any changes to the project can be compared against the
+            original scope, and the project team can assess how those changes would impact resources, time, and costs before deciding whether 
+            to approve them.
+    \end{itemize}
+    \item Improves Project Control and Tracking
+    \begin{itemize}
+        \item Once the scope is defined, it serves as a baseline to measure progress and determine whether the project is on track. Deviations from 
+            the scope can be identified early and corrected before they lead to significant issues.
+    \end{itemize}
+    \item Enhances Team Focus and Productivity 
+    \begin{itemize}
+        \item A clear scope gives the project team a clear understanding of their responsibilities 
+            and tasks. With specific deliverables in mind, the team can stay focused and work efficiently toward the project goals.
+    \end{itemize}
+    \item Legal Protection
+    \begin{itemize}
+        \item In contractual or formal settings, the project scope serves as a reference to protect the project 
+            team and stakeholders legally. If there are disputes about what was promised versus delivered, the defined scope provides a 
+            solid basis for resolution.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{\textit{Extra notes from gpt end here! }}
 
 \vspace{0.5 cm}
 \subsubsection{\textbf{Functional Requirements and Non-functional requirements}}
@@ -171,7 +176,7 @@ while also considering enhancements when possible.
 
 \textbf{\textit{Examples:}} 
     \begin{enumerate}[(a)]
-        \item The user should be able to log into the dashboard using biometric credentials.  
+        \item The user should be able to log into the dashboard using bio-metric credentials.  
     \end{enumerate}
 \vspace{0.5 cm}
 
@@ -183,7 +188,8 @@ while also considering enhancements when possible.
             \begin{itemize}
                 \item  The system must allow users to create an account by providing personal details (e.g., name, email, ID). 
                 \item  The system should provide a password recovery option.
-                \item  User Registration and Authentication Users must be able to log in using their credentials (username/password or biometric login).
+                \item  User Registration and Authentication Users must be able to log in using their credentials (username/password 
+                    or bio-metric login).
             \end{itemize}
         \item Book Search and Retrieval The system should display the availability status (available, checked out, reserved). 
             \begin{itemize}
@@ -255,10 +261,12 @@ Non-functional requirements describe the quality attributes of a system, such as
     \item Scalability: The capacity of the system to handle increased loads or expand in capability.
     \item Security: Measures to protect the system from unauthorized access or breaches.
     \item Maintainability: The ease with which the system can be modified or updated.
-    \item Avalibility: The accessibility of the system to the users over a period of time.
+    \item Availability: The accessibility of the system to the users over a period of time.
 \end{itemize}
 
 \vspace{0.5 cm}
+\textbf{\textit{Extra notes from gpt starts here! }}
+
 \textbf{\textit{Examples of Non-Functional Requirements:}}
 
 \begin{enumerate}
@@ -295,7 +303,7 @@ Non-functional requirements describe the quality attributes of a system, such as
 
 \begin{itemize}
         \item The system should allow for easy integration of new features with minimal disruption to existing functionality.
-        \item The codebase must be documented in compliance with established coding standards.
+        \item The code-base must be documented in compliance with established coding standards.
 \end{itemize}
         \item Compatibility Requirements
 
@@ -332,9 +340,12 @@ Non-functional requirements describe the quality attributes of a system, such as
 In summary, non-functional requirements are critical for the overall success of a system, influencing how well it meets user expectations 
 and performs under various conditions.
 
+\textbf{\textit{Extra notes from gpt end here! }}
+
 Normally, developers use use case diagrams to represent the functional requirements of a system
 
-Use case diagrams are simple visual tools that show how users interact with a system. They help explain what the system can do from the user's point of view. The main parts 
+Use case diagrams are simple visual tools that show how users interact with a system. They help
+explain what the system can do from the user's point of view. The main parts 
 of a use case diagram are actors, which are the users or things that use the system, and use cases, which are the actions they can
 take, like searching for a book, borrowing a book, or signing up as a new user. The system boundary is a box that shows what is included in the system. For example, in a library management system, the actors could be a "User" and a "Librarian," while the use cases might include searching for books and returning borrowed ones. Use case diagrams are useful because they help everyone understand how users will interact with the system, making it easier to plan and develop the needed features.
 
@@ -343,7 +354,7 @@ take, like searching for a book, borrowing a book, or signing up as a new user. 
 \subsubsection{Feasibility study}
 
 A feasibility study is an analysis conducted to determine the viability of a proposed project or solution. It evaluates whether 
-the project is practical and achievable within a given timeframe, budget, and resource constraints. The goal of a feasibility study is to
+the project is practical and achievable within a given time-frame, budget, and resource constraints. The goal of a feasibility study is to
 assess various aspects of a project to help stakeholders make informed decisions about whether to proceed, modify, or abandon the idea.
 
 \textbf{Key Components of a Feasibility Study}
@@ -415,35 +426,42 @@ assess various aspects of a project to help stakeholders make informed decisions
 
 \end{enumerate}
 
+
+
+\textbf{\textit{Extra notes from gpt starts here! }}
+
 Importance of a Feasibility Study
 \begin{enumerate}
     \item Informed Decision-Making: Helps stakeholders understand the potential challenges and benefits, allowing for more informed decisions.
     \item Risk Mitigation: Identifies potential risks and obstacles early in the planning process, enabling the team to address them proactively.
-    \item Resource Allocation: Provides insight into the resources required for the project, helping organizations allocate their time, money, and personnel effectively.
+    \item Resource Allocation: Provides insight into the resources required for the project, 
+        helping organizations allocate their time, money, and personnel effectively.
     \item Stakeholder Confidence: Demonstrates due diligence to stakeholders and investors, increasing their confidence in the project.
 \end{enumerate}
 
-\textbf{Conclusion}
 
 In summary, a feasibility study is an essential step in project planning that assesses various factors to determine whether 
 a project is worth pursuing. By thoroughly analyzing the technical, economic, operational, legal, and scheduling aspects, 
 organizations can make better-informed decisions that contribute to successful project outcomes.
+
+\textbf{\textit{Extra notes from gpt end here! }}
+\vspace{0.2cm}
 
 \textit{At the end of the first phase, after completing all the above steps, it will result in an document called an SRS document also know as the 
 Software Requirement Specification. This is the outcome of your first phase, after the requirement gathering and the feasibility analysis.}
 
 \subsection{System design - Design phase.}
 the second phase is the System design.
-In this phase all theu architects and the senior members in a development team will refer to the SRS and then come up with a design
-for the software inaccordance to the requirement.  
+In this phase all the architects and the senior members in a development team will refer to the SRS and then come up with a design
+for the software in accordance to the requirement.  
 
 The SRS (Software requirement specification) is given to the architects and senior managers who will the be creating the high level design that 
 outlines the system architecture and component 
 
 This is the most important phase as this is where the developer develops the design for the high level code of the software.  
 
-\textit {Create a high level desing that outlines the system architecture and components. Define data structures, interfaces, algorithms and overall
-system behaviour.}
+\textit {Create a high level design that outlines the system architecture and components. Define data structures, interfaces, algorithms and overall
+system behavior.}
   
 The tools that are used:
 \begin{itemize}
@@ -467,10 +485,10 @@ component work as intended.
 This design is transformed into an executable code block. Thus the developer can run the program or software and check the functionalities for any
 errors or malfunctions.
 
-Inorder to fulfill the requirements and produce a functional code block that meets all the requirements, in this phase all the developers are involved
+In order to fulfill the requirements and produce a functional code block that meets all the requirements, in this phase all the developers are involved
 as well as the senior developers and the team leads, and more.
 
-At the end of this level the developers will have an executable code, a manual, and not a deployable product.  
+At the end of this level the developers will have an executable code, a manual, and not a deploy-able product.  
 This manual will teach the end user on how to use the system or the program. 
 
 
@@ -485,20 +503,21 @@ during testing.
 
 
         The testers are allowed to see the internal code structures. In this type of testing the main advantage is that even if the code does function
-        and produce the correct output, the testers can see the internal structures and check for errors such as code redundency, or wrong output for
-        some of the internal functoins of the code. Usually the developers from the team that originally developed the code for the software might be 
+        and produce the correct output, the testers can see the internal structures and check for errors such as code redundancy, or wrong output for
+        some of the internal functions of the code. Usually the developers from the team that originally developed the code for the software might be 
         present.
 
     \item Black box testing:
 
-        In black box testing the internal code or the structure is unkown to the tester who is testing the code. Where the tester compares the output 
-        of the system to the expected output after inserting an input. If the expected output and the actual output are not exaclty the same then that 
-        means that there is an error or an bug in the software or the system. The tester or the quality assurance team are not provided with any documents that 
+        In black box testing the internal code or the structure is unknown to the tester who is testing the code. Where the tester compares the output 
+        of the system to the expected output after inserting an input. If the expected output and the actual output are not exactly the same then that 
+        means that there is an error or an bug in the software or the system. The tester or the quality assurance 
+        team are not provided with any documents that 
         explain the system or any type of access to the internal code.
 
-Example: automated testing can be incorperated to perform black box testing.
+Example: automated testing can be incorporated to perform black box testing.
 
-    \item Gray box testing : 
+    \item Gray box testing: 
 
         This is where the tester has partial access to the code blocks and internal code. 
 
@@ -508,271 +527,144 @@ The most important of these two types of testing is the white box and black box 
 
 Within the software testing phase there is another life cycle.
 
-\subsubsection{Software Testing Life Cycle (STLCL)}
+\subsubsection{Software Testing Life Cycle (STLC)}
+The Software Testing Life Cycle is a series of particular
+tasks carried out throughout the testing process to guarantee that the software quality objectives are accomplished.
 
 \begin{enumerate}
-    \item Requirement analysis
-    \item Test planing 
-    \item Test case design and development 
-    \item Test enviroment setup
-    \item Test execution
-    \item Test cycle closure
+    \item Requirement analysis:
+
+The tester needs to reanalyse the functional and non-functional requirements to build the test cases  
+
+    \item Test planing:
+
+Plan the test cases that will be implemented
+
+    \item Test case design and development:
+
+Designing the test cases, and record them in a test log book, for the test plan there may be multiple test cases, where in each test case the is 
+a description of the inputs that will be inserted and the outputs that are expected for the inserted outputs.
+
+    \item Test environment setup:
+
+        To execute the test cases that have been planned, the tester need to have a proper environmental setup.
+
+    \item Test execution:
+
+Execute the code blocks in any approach such as automated testing or even manual testing. Execute the code blocks in any approach such 
+as automated testing or even manual testing.
+The outcome will be the output of the results. In the test plan there will be an expected outcome, the tester will then compare the 
+expected and the actual outputs. 
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Input&Instruction to follow&Expected output&System Output&Status (pass/ fail)\\ \hline
+ & & & & \\ \hline
+ & & & & \\ \hline
+ & & & & \\ \hline
+ & & & & \\ \hline
+ & & & & \\ \hline
+\end{tabular}
+\end{center}
+\caption{Test case}
+\end{table}
+
+    \item Test cycle closure:
+
+       Finally after all the testing, and obtaining the results this test cycle is closed. 
+
 \end{enumerate}
 
+This cycle is to be reiterated based on how many sections must be tested. The tester can always restart the cycle for every new section till all the
+testing is completed.
+\subsubsection{The phases of the Testing phase}
 
-inside a life cycle you have anothe life cycle, software testing life cycled.
+There are four phases in the Testing phase: 
 
-each test case contain multiple parameters.
-  
-there are 6 phases in this software life cycle.
+\begin{enumerate}
+    \item Unit testing: 
 
-1. Requirement 
+        This is the initial testing which occurs as early as the implementation phase, which is the third phase in the Software Development Life
+        Cycle. This is an white box testing as the developers have access to all the internal code blocks.
+        While building the code in the Implementation 
+        phase the developers run the code to check the code for any bugs in parellel to the coding in the Implementation phase. In Unit testing
+        the developer verifies the code in units to assess if the application breaks down or not.
 
+    \item Integration testing:
 
-Testing Phases. 
+Where the testing occurs after integration of all the components of code. This is also an white box testing.
 
-1. Aceptance testin- which is divided into two parts.
-    1. you have an involment with the development team, where an member from a different team from the development team.
+    \item System testing:
 
-2. system testing- a black box or a white box 
-3. intergration testing is trying to integrate the components together and to verify that all these components are working well. done by the develepor
-4. Unit testing - done by the develepors them selves
-5.
+Checking the executable code, the software for any errors. Checking if all inputs return expected outputs, and that the code's functionality is 
+inaccordance to all the functional requirements, and all the non functional requirements. Testing the whole system. This is mainly done by the 
+Quality Assurance professionals and the testers, therefore this testing can be classified under all three types of testing (black, white and grey).
 
-6. Deployment stage.
- you need to follow multioplw senarios
+    \item Acceptance testing:  
 
-Direct deployment - an old system and an new system. where you stop with your old system and continue with your new system.
-there is a high risk in this way because you will be removing the old system and if your new system is to fail then you are left with, 
-no working system.
+    This phase is done mostly after the deployment of the software or the code, but there is some testing
+    before the deployment. Where the final system is tested.\\
+    Acceptance testing can be divided into:
+    
+    \begin{enumerate}
+        \item Alpha testing: 
+            Alpha testing is something done at the starting inside the software development company before the 
+            deployment of the software. An developer
+            working on a different team will do the testing again on the software, a member that has not taken part in the development of the software
+            that he will be testing at hand.
 
-Parellel deployment - is to maintain both systems for a transition time, where you run both the systems in parellel.
-there is less risk. during the transition period there is a high cost. because you are running both systems at the same time.
+        \item Beta testing:
+            This is done after the deployment, after setting up the application where the customer has demanded it. Here we allow the end users
+            to test the software. If the end users come across any bugs inside the system then this bug has to be de-bugged, and the system has to 
+            be patched.
 
-pilot deployment - where you take a sample and you let them use the new system and let the others use the old system. for this pilot group this is 
-going be a direct deployment, yet for the company this will be a parellel deployment. 
-the cost is high and the risk is low.
-
-Phases deployment - where, in each phase you introduce a new feature from the new system and remove the old feature from the old system, gradually
-introducing the new system, eventually removing the old system.
-
-this is a good way of doing the deployment.
-the risk is low 
-and a good way to handle a complex software.
-
-7...
-maintainance and support    
-
-this is like an long journey.
-cost plan is hard to predict in the long run.
-
-it is risky to decide to maintain a project for a long time.
-
-Development methodologies.
-a way we use sdlc in real life is kown as development methodologies.
-  
-
-Homw woik.............read and get an idea of these models 
-
-Waterfall model    --1 
-
-spiral model --2 used for high risk projects, for large projects.
-
-V model --3 verification and validation. 
-
-agile model --4 very easyy to adapt to changes.
-
-The RAD model.
-
-Home work.............
-
-
-
-do a research on the models pros and cons. 
-SDLC/Dev
-
-startsection{Software development life cycle}
-
-Is a systematic process or set of phases that guide the development of software applications from conception to deployment and maintenance.
-
-To make the idea into something that is tangible, you need to follow multiple phases which are in between these two stages.
-
-Standard set of steps 
-
-Analysis phase  
-Design phase  
-Testing phase 
-
-These phases are redone again and again every time you have to make an improvement to the software and update it. Thats why its called a cycle.
-
-1. Analysis phase 
-
-Identify the problem  
-Gather the requirement   
-Do an analysis
-
-You need to first identify and understand the needs. Such as the requirements.
-
-This identification is called the elicitation phase
-
-Elicitation phase is to implement methods such as surveys ans intervcies and observation , researdch and litriratki  
-And questuionsareds
-
-The Scope of the projects   
-	 Inscope and outscope to identify the inscope, to handle them and to identify t;he out scppw ewhvih will not be handled buy us
-
-To identify the functional and the nonfunctional requirements 
-
-The functional requierrnet   
-Describes the specific behaviours or the functions that a system must perform  
-The functionally of the program that you will bge making 
-
-Moscow standard- a way how we standardise  ieee .
-
-Must  
-Should   
-Would  
-Could 
-
-Prioritizw and criticalness
-
-The user should be able to log into the dashboard using biometric credentials. 
-
-The user who is the target audience and the action functioon which is the dash board   
-And the format which is to be able to by using the  biometric
-
-Functional requirements for the library requirements ..
-
-To be able to add and organise books  
-To be able to track books that are lent   
-To be able to generate a user identity per person  
-To be able to return the books   
-To be able to
-
-Feasibility study
-
-1. Technical Feasibility  
-2. Operational Feasibility   
-3. Economical Feasibility  
-    1. Expendeture
-        1.direct expendeture 
-        2. Indirect revenue.
-    2. Revenue
-        1. direct expendeture
-        2. Indirect revenue.
-
-
-4. Organisational Feasibility  
-     
-
-5. Legal Feasibility
+    \end{enumerate}
         
-    you need to consider the legal feasibility.
+\end{enumerate}
+
+Now after all these phases the company has a shippable product which can be used by the users, customers.
 
 
-Software requirment specification. this is the requirement of the first phase.
+\subsection{Deployment phase.}
 
-the second phase is the System design.
- the srs (Software requirement specification) is given to the architects and senior managers who will the be creating the high level design that 
-outlines the system architecture and component 
+In this phase the software is deployed to the production enviroment or released to the end users and also within this phase the company must ensure
+a smooth transition from the development to the operational enviroment.
 
-this is where the data structures and, interfaces and algoriths, and overall system behaviour.
-  
-the tools that are used : UML diagrams .
+There are four deployment phases:
 
-an artifact called the Software Desing Document. 
+\begin{enumerate}
+    \item Direct deployment:
 
-the third chapter is the implementation chapter, where you write the actual code. 
+        To stop the old system and to deploy the new system.
 
-this is where you do the unit testing.   
-
-at the end of this you will have an code or program which can be executable.
-
-
-the forth chpter is the "Testing"
-
-to check wether the system outputs and the functional requirements are working properly
-there are three basic types of testing .
-
-white box testing and black box testings, grey box testing 
-
-black box. where anything inside is not visible. where you do all the testing without having any access to any internal code, or any other documents.
-what you do is that you insert an input and then proceed to verify if the output is correct.
+    \item Pilot deployment: 
 
 
 
-white box. a similtude, like a glass. you have acess to all the code and have an understanding of it. all documents are accessible.
+    \item Parellel deployment: 
+    \item Phases deployment:
+\end{enumerate}
 
-grey box, where the code is partially accessible, 
+\subsection{Maintainace and support phase}
 
-inside a life cycle you have anothe life cycle, software testing life cycled.
+In this phase the software development company will adress and fix the issues that are reported by the users in the production enviroment, while 
+also implementing updates, enhancments, or patches as needed.
 
-each test case contain multiple parameters.
-  
-there are 6 phases in this software life cycle.
+\section{Development methodologies}
 
-1. Requirement 
+Software Development Life Cycle (SDLC) models are structured frameworks used to guide the process of developing software applications from conception
+to deployment and maintainace. These models provide a systematic approach to managing the various stages of software development, ensuring that 
+projects are well organised, predictable, and efficient.
 
+In development methodologies the steps learnt in the previous section SDLC are brought into a structured framework, these frameworks are then applied
+when developing different products based on thier nature. All the steps in the SDLC cycle will be used in these development methodologies.
 
-Testing Phases. 
+\textbf{WaterFall Model}
 
-1. Aceptance testin- which is divided into two parts.
-    1. you have an involment with the development team, where an member from a different team from the development team.
+\textbf{Spiral Model}
 
-2. system testing- a black box or a white box 
-3. intergration testing is trying to integrate the components together and to verify that all these components are working well. done by the develepor
-4. Unit testing - done by the develepors them selves
-5.
+Combines elements of both 
 
-6. Deployment stage.
- you need to follow multioplw senarios
-
-Direct deployment - an old system and an new system. where you stop with your old system and continue with your new system.
-there is a high risk in this way because you will be removing the old system and if your new system is to fail then you are left with, 
-no working system.
-
-Parellel deployment - is to maintain both systems for a transition time, where you run both the systems in parellel.
-there is less risk. during the transition period there is a high cost. because you are running both systems at the same time.
-
-pilot deployment - where you take a sample and you let them use the new system and let the others use the old system. for this pilot group this is 
-going be a direct deployment, yet for the company this will be a parellel deployment. 
-the cost is high and the risk is low.
-
-Phases deployment - where, in each phase you introduce a new feature from the new system and remove the old feature from the old system, gradually
-introducing the new system, eventually removing the old system.
-
-this is a good way of doing the deployment.
-the risk is low 
-and a good way to handle a complex software.
-
-7...
-maintainance and support    
-
-this is like an long journey.
-cost plan is hard to predict in the long run.
-
-it is risky to decide to maintain a project for a long time.
-
-Development methodologies.
-a way we use sdlc in real life is kown as development methodologies.
-  
-
-
-Homw woik.............read and get an idea of these models 
-
-Waterfall model    --1 
-
-spiral model --2 used for high risk projects, for large projects.
-
-V model --3 verification and validation. 
-
-agile model --4 very easyy to adapt to changes.
-
-The RAD model.
-
-Home work.............
-
-
-
-do a research on the models pros and cons. 
+\textbf{}
 \end{document}

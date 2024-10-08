@@ -1,0 +1,55 @@
+
+\documentclass[]{book}
+\author{Abdul Waajid}
+\date{11th of October 2024}
+
+%hypperref setup.
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+%hypperref setup.
+
+\urlstyle{same}
+\usepackage{parskip}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in]{geometry}
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage{tipa}
+\usepackage{multirow} %for merging in tables
+
+\usepackage{float}
+
+\setlength{\parskip}{0.3 em}
+\setlength{\parskip}{1em}  % Add 1em space between paragraphs
+\setlength{\parindent}{0pt} % Disable paragraph indentation
+\begin{document}
+\section{Real Values in Binary}
+
+\subsection{Bicimal}
+
+Binary format for representing fractional values.
+\textit{Fixed point}
+
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \multicolumn{4}{|c|}{Bicimal}\\ \hline
+            $2^{-1}$ & $2^{-2}$ & $2^{-3}$ & $2^{-4}$\\ \hline
+            $\frac{1}{2}$ & $\frac{1}{4}$ & $\frac{1}{8}$ &  $\frac{1}{16}$\\ \hline
+            $0.5$ & $0.25$ & $0.125$ & $0.0625$\\ \hline
+        \end{tabular}
+    \end{center}
+    \caption{}
+\end{table}
+
+\end{document}
+
+

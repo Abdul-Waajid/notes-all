@@ -1,4 +1,4 @@
-\documentclass[]{article}
+\documentclass[]{book}
 \title{Math for Computing}
 \author{Abdul Waajid}
 \date{10/7/2024}
@@ -18,7 +18,7 @@
 \usepackage{parskip}
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage{graphicx}
-\usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in]{geometry}
+\usepackage[top=1in,bottom=1.0in,left=0.5in,right=0.5in]{geometry}
 \usepackage{enumerate}
 
 \usepackage{float}
@@ -31,15 +31,15 @@
 \maketitle
 
 
-\section{Sequences and series}
+\section{Sequences }
 
-\subsection{Sequences}
 
 A sequence is an ordered list of elements (numbers, objects, ect.), usually arranged according to a certain rule or pattern.
 
 Each element in a sequence is called a term, and the position of a term in a sequence is called an index.
 
-\textbf{\textit{Examples}}
+\vspace{0.5 cm}
+\textit{Examples}
 
 $(2, 4, 6, 8, 10, 12)$ - sequence of even numbers
 
@@ -47,13 +47,14 @@ $(1, 3, 5, 7, 9, 11)$ - sequence of odd numbers
 
 Sequences can be finite or \href{https://chatgpt.com/share/67036ea9-4ee4-8013-807b-503ab41d091b}{(Relatively)} infinite.
 
-\subsubsection{Arithmetic sequence}
+\subsection{Arithmetic sequence}
 
 An arithmetic sequence (progression) is a sequence of numbers in which the difference between consecutive terms is constant,
 basically an arithmetic sequence is a list of numbers that increase or deacrease by the same value every single time. 
 This (constant) difference is called the "comman 
-difference", denoted by d. The general form of an arithmetic sequence is 
+difference", denoted by d. 
 
+\textbf{The general form of an arithmetic sequence is}
 
 $$ a_{n} = a + (n-1)d$$
 
@@ -85,17 +86,18 @@ Therefore to find the 4th term of this sequence using the equation $ a_{n} = a +
 \end{align}  
 
 
+\vspace{0.5 cm}
 \textit{Example}: 
 
-In a sequence $ 10, 7, 4, 1, ...  $ find the 11th term
+In a sequence $ 10, 7, 4, 1, ...  $ find the 11th term.
  
-The first term (a) is 10 
+The first term (a) is 10
 
-The comman difference (d) is 3
+The comman difference (d) is 3.
 
-The term $ n  $ that must be found is 11
+The term $ n  $ that must be found is 11.
 
-To find the 11th term
+To find the 11th term.
 
 \begin{align}
     a_{n} &= a + (n-1) \cdot d \\
@@ -110,12 +112,79 @@ Remmber if the comman difference is positive the numbers get larger and if the c
 It is possible to find the value of any term in a arithmetic sequence (where the numbers increase or deacrease by the same value)
 with this formula.
 
-\subsubsection{Geometric sequences}
+\subsection{Geometric sequences}
 
-A geometric sequence (progression)
+A geometric sequence is a list of numbers where each term is found by multiplying the previous term by exactly the same amount
+ (which cannot be zero) which is called the comman ratio " $ r  $" and the exception is the first term of the sequence.   
 
+ How it works is that you start with the first term which will be called "$ a  $". 
+Then to get the next term you multiply the first term by the comman ratio which will be called  "$ r  $", now you have the second term.
+After this all you need to do is to keep multiplying the result with the comman ratio $ r  $ to get the following terms.
 
+\textbf{Formula for the  $ n th  $ term of a geometric sequence}
 
+$$ a_{n} = a \cdot r^{n-1}$$
+
+ $ a_{n} $ is the term you are looking for.
+
+ $ a  $ is the first term.
+
+ $ r $ is the comman ratio (the number that you multiply by). 
+
+ $ n $ is the position of the term (1st, 2nd, 3rd, etc.).
+
+\vspace{0.5 cm}
+\textit{Example}
+
+Consider the sequence:  $ 3, 6, 12, 24, ...  $
+
+The first term  $a$ is 3.
+ 
+The comman ratio  $ r  $ is 2 because each term is equal to the product of the previous term by two (except the first term). 
+
+To find the fourth term:
+
+\begin{align}
+    a_{n} &= a \cdot r^{(n-1)} \\
+    a_{4} &= 3 \cdot 2^{(4-1)} \\
+    a_{4} &= 3 \cdot 2^{3} \\
+    a_{4} &= 3 \cdot 8 \\
+    a_{4} &= 24 \\
+\end{align}
+
+So therefore the fourth term is 24 which matches the sequence.
+
+\vspace{0.5 cm}
+\textit{Example}
+
+Another sequence: (16, 8, 4, 2, ...)
+
+To find the fifth term of this sequence.
+
+\begin{align}
+    a_{n} &= a \cdot r^{(n-1)} \\
+    a_{5} &= 16 \cdot 0.5^{(5-1)} \\
+    a_{5} &= 16 \cdot 0.5^{(4)} \\
+    a_{5} &= 16 \cdot 0.0625 \\
+    a_{5} &=1 \\
+\end{align}
+ 
+\section{Sets}
+
+A set is a group or collection of things that are clearly defined. These things can be anything like numbers objects or even ideas. Think of it as 
+a box that holds certain items, and only those specific items belong to that box.
+
+The objects that are part of a set are called the elements or members of that set. 
+
+Sets are also usually named with capital letters, and the items of the set are written within curly brackets.
+
+\vspace{0.5 cm}
+\textit{Example}
+
+If you have a set called $A$ that contains the numbers $1$, $2$, and $3$ you would write it like this:
+
+$A={1,2,3}$
+
+This means that the set $A$ contains the numbers $1$, $2$, and $3$, and only those numbers.
 
 \end{document}
-
